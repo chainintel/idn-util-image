@@ -1,0 +1,30 @@
+{
+  "name": "@idn/util-image",
+  "version": "1.0.2",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "mocha --reporter spec",
+    "prepublish": "tsc",
+    "dopublish": "git add . ; git commit -m'bump version' ; git push origin master ; npm publish --access=public"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chainintel/idn-util-image.git"
+  },
+  "homepage": "https://github.com/chainintel/idn-util-image#readme",
+  "url": "https://github.com/chainintel/idn-util-image/issues",
+  "email": "support@chainintel.com",
+  "devDependencies": {
+    "@types/node": "^10.12.6"
+  },
+  "dependencies": {
+    "is-typedarray": "^1.0.0",
+    "pica": "^5.0.0"
+  }
+}
